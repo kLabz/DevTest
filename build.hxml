@@ -1,7 +1,4 @@
--lib react-next
 -cp src
-
 -js app.js
 -dce full
---debug
--main Go
+-main Main
