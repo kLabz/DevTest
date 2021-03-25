@@ -1,2 +1,0 @@
-package griddle.components;
-
