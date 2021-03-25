@@ -1,24 +1,9 @@
-import js.Browser;
-import js.html.DivElement;
-import react.ReactDOM;
-import react.ReactMacro.jsx;
-
-// Comment out next line to fix issue
-import debug.Out;
+import react.ReactComponent;
 
 class Go {
 	public static function main() {
-		render(createRoot());
-	}
-
-	static function createRoot():DivElement {
-		var root:DivElement = Browser.document.createDivElement();
-		root.className = 'rootBox';
-		Browser.document.body.appendChild(root);
-		return root;
-	}
-
-	static function render(root:DivElement) {
-		var app = ReactDOM.render(jsx('<App/>'), root);	
+        trace(Type.getInstanceFields(Type.getClass(new Test())));
 	}
 }
+
+class Test extends ReactComponentOf<{}, {}> {}
